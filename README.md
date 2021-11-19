@@ -1,8 +1,8 @@
-# bisecting-k-means
+# Bisecting k-means
 
 The report explains the methodology used to perform bisecting k-means algorithm on a data set containing 8580 text records in sparse format. It is a text data with news records in document-term sparse matrix format where each line represents a document. The train.dat file is a simple CSR sparse matrix containing the features associated with different feature ids and their counts in the input file. Each pair of values within a line represent the term id and its count in that document.
 
-###Methodology used:
+### Methodology used:
 1. To start with, I have taken the dataset train.dat and I have extracted the values, indices, and pointers so that I can create a csr_matrix.
 
 2. After creating the CSR matrix of the document data, I have calculated the TF-IDF(Term Frequency - Inverse Document Frequency) which is used to calculate frequency of a word in a document and based on that frequency it decides how important that word is for that document. This internally multiplies how many times a word appears in the document with the inverse document frequency of the words across a set of documents. I have used an inbuilt tfidftransformer from sklearn.feature_extraction to achieve this and used l2 normalization to calculate this.
