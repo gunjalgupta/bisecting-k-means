@@ -25,3 +25,5 @@ d. The output given is the set of labels which indicate the cluster id to which 
 7. The optimal k value labels are put into an external file output.dat for k=7 and plot a graph of the Silhouette coefficient score and k values. The output.dat file is the final output i.e. prediction file for the performed algorithm.
 
 8. The graph achieved after various runs of the program is as follows:
+
+![image](https://user-images.githubusercontent.com/78285301/142564382-17c28803-748e-45d8-80fa-57bc1a0c4517.png)
